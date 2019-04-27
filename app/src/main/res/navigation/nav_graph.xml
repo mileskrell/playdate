@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/playdate_list_dest">
+
+    <fragment
+        android:id="@+id/playdate_list_dest"
+        android:name="com.mileskrell.playdate.ui.PlaydateListFragment"
+        android:label="@string/my_playdates"
+        tools:layout="@layout/fragment_playdate_list">
+        <action
+            android:id="@+id/action_go_to_login_dest"
+            app:destination="@id/login_dest"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left" />
+        <action
+            android:id="@+id/action_go_to_playdate_details_dest"
+            app:destination="@id/playdate_details_dest"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_go_to_new_playdate_dest"
+            app:destination="@id/new_playdate_dest"
+            app:enterAnim="@anim/slide_in_up"
+            app:exitAnim="@anim/slide_out_down"
+            app:popEnterAnim="@anim/slide_in_down"
+            app:popExitAnim="@anim/slide_out_up" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/login_dest"
+        android:name="com.mileskrell.playdate.ui.LoginFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/playdate_details_dest"
+        android:name="com.mileskrell.playdate.ui.PlaydateDetailsFragment"
+        android:label="@string/playdate_details"
+        tools:layout="@layout/fragment_playdate_details">
+        <argument
+            android:name="playdate_code"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/new_playdate_dest"
+        android:name="com.mileskrell.playdate.ui.NewPlaydateFragment"
+        android:label="@string/new_playdate"
+        tools:layout="@layout/fragment_new_playdate" >
+        <action
+            android:id="@+id/action_go_to_new_playdate_created_dest"
+            app:destination="@id/new_playdate_created_dest"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_down"
+            app:popExitAnim="@anim/slide_out_up" />
+    </fragment>
+    <fragment
+        android:id="@+id/new_playdate_created_dest"
+        android:name="com.mileskrell.playdate.ui.NewPlaydateCreatedFragment"
+        android:label="@string/new_playdate"
+        tools:layout="@layout/fragment_new_playdate_created">
+        <argument
+            android:name="playdate_code"
+            app:argType="string" />
+    </fragment>
+</navigation>
