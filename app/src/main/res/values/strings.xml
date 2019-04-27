@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Playdate</string>
+    <!--<string name="web_client_id">WEB CLIENT ID HERE</string>-->
+
+    <!--Strings used in multiple places-->
+    <string name="cancel">Cancel</string>
+    <string name="network_error">Network error</string>
+
+    <!--Fragment titles-->
+    <string name="my_playdates">My playdates</string>
+    <string name="playdate_details">Playdate details</string>
+
+    <!--Login fragment-->
+    <string name="sign_in">Sign in</string>
+    <string name="playdate_logo">Playdate logo</string>
+
+    <!--Playdate list fragment-->
+    <string name="pending">Pending</string>
+    <string name="log_out">Log out</string>
+    <string name="no_playdates_message">You don\'t have any playdates yet.\nTap a button to add one!</string>
+    <string name="join_a_playdate">Join a playdate</string>
+    <string name="new_playdate">New playdate</string>
+
+    <!--Playdate details fragment-->
+    <string name="playdate_code">"Playdate code: "</string>
+    <string name="starts">"Starts: "</string>
+    <string name="ends">"Ends: "</string>
+    <string name="reschedule">Reschedule</string>
+    <string name="cancel_playdate_question">Cancel playdate?</string>
+    <string name="canceling_playdate_failed">Canceling playdate failed</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+
+    <!--Join playdate dialog-->
+    <string name="join_playdate">Join playdate</string>
+    <string name="enter_join_code">Enter join code…</string>
+    <string name="join">Join</string>
+    <string name="invalid_join_code">Invalid join code</string>
+    <string name="joining_playdate_failed">Joining playdate failed</string>
+
+    <!--Playdate creation fragment-->
+    <string name="name">Name</string>
+    <string name="length_minutes">Length (minutes)</string>
+    <string name="between">Between</string>
+    <string name="and">And</string>
+    <string name="create_playdate">Create playdate</string>
+
+    <string name="playdate_name_too_long">Playdate name too long</string>
+    <string name="playdate_cannot_be_0_minutes">Playdate cannot be 0 minutes</string>
+    <string name="playdate_needs_a_name">Playdate needs a name</string>
+    <string name="playdate_needs_a_length">Playdate needs a length</string>
+
+    <!--Playdate created fragment-->
+    <string name="new_playdate_congrats">Congrats, you\'ve just created a new playdate!\n\nHere\'s the code to share:</string>
+</resources>
